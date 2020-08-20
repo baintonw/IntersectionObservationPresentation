@@ -11,25 +11,36 @@ body {
 .wrap {
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
+
+    padding: .5rem;
+
     background-color: snow;
     width: 60.2%;
     /* margin-top: 15rem; */
     margin: 6.14rem auto;
+
+
 }
 
 img {
     display: block;
-    /* flex: 0 0 50%; */
     margin: 10px;
-
     opacity: 0;
     transform: translate(5rem, 0);
     transition: all 2s ease;
   }
+
+img:nth-of-type(even) {
+    /* transition: all 5s ease; */
+    transition-delay: .6s;
+}
+
   
   img.slideLeft {
     transform: translate(0rem, 0);
     opacity: 1;
-    
   }
+
+
   

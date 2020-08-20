@@ -24,12 +24,10 @@ window.addEventListener("load", (event) => {
   }
   
   function handleIntersect(entries, observer) {
+    
     entries.forEach(entry => {
-      console.log('the entire img has loaded', entry)
       if(entry.isIntersecting) {
-        console.log('this is the target: ', entry.target)
         entry.target.classList.add('slideLeft')
       }
-      
     })
   }
