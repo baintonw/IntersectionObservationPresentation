@@ -8,9 +8,20 @@ body {
     background-color: rgb(177, 193, 255, .2);
 }
 
+.wrap {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: snow;
+    width: 60.2%;
+    /* margin-top: 15rem; */
+    margin: 6.14rem auto;
+}
+
 img {
     display: block;
-    margin-bottom: 10px;
+    /* flex: 0 0 50%; */
+    margin: 10px;
+
     opacity: 0;
     transform: translate(5rem, 0);
     transition: all 2s ease;
@@ -22,6 +33,3 @@ img {
     
   }
   
-  img:last-of-type {
-    margin-bottom: 0px;
-  }
