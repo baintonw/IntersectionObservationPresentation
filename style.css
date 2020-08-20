@@ -23,13 +23,22 @@ body {
 
 }
 
-img {
+
+
+img:not(.hero) {
     display: block;
     margin: 10px;
     opacity: 0;
     transform: translate(5rem, 0);
     transition: all 2s ease;
-  }
+}
+
+.hero {
+    /* display: block; */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 
 img:nth-of-type(even) {
     /* transition: all 5s ease; */
